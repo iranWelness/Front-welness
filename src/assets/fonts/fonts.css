@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Kalame;
+    font-style: normal;
+    font-weight: bolder;
+    src: url("./WebFonts/_eot/KalamehWeb\(FaNum\)-Black.eot");
+    src: url("./WebFonts/_eot/KalamehWeb(FaNum)-Black.eot?#iefix") format("embedded-opentype"), url("./WebFonts/_Woff2//KalamehWeb(FaNum)-Black.woff2") format("woff2"), url("./WebFonts//_Woff//KalamehWeb\(FaNum\)-Black.woff") format("woff");
+}
+
+@font-face {
+    font-family: Kalame;
+    font-style: normal;
+    font-weight: bold;
+    src: url("./WebFonts/_eot/KalamehWeb\(FaNum\)-Bold.eot");
+    src: url("./WebFonts/_eot/KalamehWeb(FaNum)-Bold.eot?#iefix") format("embedded-opentype"), url("./WebFonts/_Woff2//KalamehWeb(FaNum)-Bold.woff2") format("woff2"), url("./WebFonts//_Woff//KalamehWeb\(FaNum\)-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: Kalame;
+    font-style: normal;
+    font-weight: normal;
+    src: url("./WebFonts/_eot/KalamehWeb\(FaNum\)-Regular.eot");
+    src: url("./WebFonts/_eot/KalamehWeb(FaNum)-Regular.eot?#iefix") format("embedded-opentype"), url("./WebFonts/_Woff2//KalamehWeb(FaNum)-Regular.woff2") format("woff2"), url("./WebFonts//_Woff//KalamehWeb\(FaNum\)-Regular.woff") format("woff");
+}
+
+* {
+    font-family: Kalame, "Roboto", "Helvetica", "Arial", sans-serif !important;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+input:-webkit-autofill {
+    transition: background-color 5000s;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.circle_reactGradientProgressPercentageSpan__1HdhL {
+    display: none !important;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #a5a5a5;
+}
+
+.MuiDataGrid-cell--textLeft {
+    text-align: right !important;
+}
+
+.MuiTablePagination-actions {
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+
+.muitablepagination-displayedrows {
+    direction: initial;
+}

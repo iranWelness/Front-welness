@@ -1,0 +1,16 @@
+{
+    "name": "ایران‌ولنس",
+    "short_name": "ایران‌ولنس",
+    "description": "ولنس؛ پارادایمی ورای سلامتی",
+    "lang": "en-US",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "icons": [{
+        "src": "maskable_icon_x192.png",
+        "type": "image/png",
+        "sizes": "196x196",
+        "purpose": "any maskable"
+    }]
+}

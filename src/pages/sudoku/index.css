@@ -1,0 +1,140 @@
+:root {
+    font-size: 16px;
+    --board-width: 27rem;
+    --cell-size: calc(var(--board-width) / 9 - 2px);
+}
+
+@media only screen and (max-width: 600px) {
+     :root {
+        --board-width: 21rem;
+        --cell-size: calc(var(--board-width) / 9 - 2px);
+    }
+    .game-menu {
+        position: initial !important;
+    }
+}
+
+.game-board {
+    width: var(--board-width);
+    max-width: 100%;
+}
+
+.board-row {
+    display: flex;
+}
+
+.square {
+    float: left;
+    font-family: Comic Sans MS;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    line-height: var(--cell-size);
+    font-size: 1.4rem;
+    text-align: center;
+    margin: -1px;
+    color: blue;
+    background-color: #e3f2ff;
+    border: 1px solid #949494;
+}
+
+.square:hover {
+    cursor: pointer;
+    background-color: #97bfdb;
+}
+
+.block {
+    float: left;
+    border: 2px solid #586a7e;
+    display: grid;
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    grid-column: span 3;
+    position: relative;
+    left: 12px;
+}
+
+.initial {
+    font-family: Times;
+}
+
+.conflict {
+    color: #f43a3a;
+    background-color: pink;
+}
+
+.conflict:not(.initial) {
+    background-color: #ffa5a5;
+}
+
+.game {
+    /* margin-top: 10vh; */
+}
+
+.game-board {
+    position: relative;
+    margin: auto;
+}
+
+.game-menu {
+    top: 2.5rem;
+    right: -10rem;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto 50px;
+}
+
+.validation {
+    color: #fff !important;
+    width: 289px;
+    height: 57px;
+    margin: 10px auto;
+    font-size: 0.9em;
+    max-width: 100%;
+    box-shadow: 7px 6px 13px #a6a6a6b8, 7px -8px 20px 0px #ffffffd1;
+    margin-top: 15px !important;
+    border-radius: 10px !important;
+    background-color: #08afe4 !important;
+}
+
+.status {
+    position: absolute;
+    top: 28.75rem;
+    left: 8rem;
+    top: 77vh;
+    left: calc(50% - 108px);
+    font-size: 1.5rem;
+    color: rgb(3, 3, 138);
+    background-color: #cacaca;
+    box-shadow: 7px 6px 13px #a6a6a6b8, 7px -8px 20px 0px #ffffffd1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.instructions {
+    margin-top: 1rem;
+}
+
+.title {
+    text-align: center;
+    margin: 30px auto;
+    position: absolute;
+    top: -100px;
+}
+
+.game-wrapper {
+    padding: 18px;
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 35% 35% 36%;
+}
+
+.generate-btn {
+    border: 1px solid #636363 !important;
+    width: 289px;
+    height: 60px;
+    border-radius: 13px !important;
+}
