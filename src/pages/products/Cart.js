@@ -4,7 +4,7 @@ import axios from 'axios';
 import Header from '../../components/Header';
 import { makeStyles } from "@material-ui/core/styles";
 import Delete from '../../assets/images/adminDelete.png';
-import logo from '../../assets/images/logo.svg';
+// import logo from '../../assets/images/logo.svg';
 import notifSound from '../../assets/audio/notif.wav';
 import { Link } from 'react-router-dom';
 
