@@ -112,11 +112,22 @@ const Quizzes = () => {
         <>
             <Divider variant='middle' className={classes.divider} />
             <p style={{ color: "#AFBCCD", marginTop: 30 }}>SPA-S-1</p>
-            <Box display="flex" flexWrap="wrap" justifyContent="space-around" >
+            <Box display="flex" flexWrap="wrap" justifyContent="space-around" width="80%" marginTop="7rem">
                 <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/physical/quiz/movement">تحرک</Button>
                 <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/physical/quiz/nutrition">تغذیه</Button>
                 <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/physical/quiz/breath">تنفس</Button>
                 <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/physical/quiz/sleep">خواب</Button>
+            </Box>
+        </>
+    )
+
+    let SocialtiveQuiz = (
+        <>
+            <Divider variant='middle' className={classes.divider} />
+            <p style={{ color: "#AFBCCD", marginTop: 30 }}>SPA-S-1</p>
+            <Box display="flex" flexWrap="wrap" justifyContent="space-around" width="50%" marginTop="7rem">
+                <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/social/quiz/firstlevelupgrate">سطح یک ارتقا</Button>
+                <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/social/quiz/secondlevelupgrate">سطح دو ارتقا</Button>
             </Box>
         </>
     )
@@ -127,7 +138,7 @@ const Quizzes = () => {
                 {quizzes}
             </Box>
 
-            {(dimension === "physical") ? suggestiveQuiz : null}
+            {(dimension === "physical") ? suggestiveQuiz : (dimension === "social") ? SocialtiveQuiz : null}
         </Box>
     )
 }

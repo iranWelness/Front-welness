@@ -69,6 +69,8 @@ import moment from 'moment-jalaali';
 import Breath from "./pages/quizzes/quizes/Breath";
 import Movement from "./pages/quizzes/quizes/Movement";
 import Sleep from "./pages/quizzes/quizes/Sleep";
+import FirstLevelUpgrade from "./pages/quizzes/social/FirstLevelUpgrade";
+import SecondLevelUpgrade from "./pages/quizzes/social/SecondLevelUpgrade";
 
 
 
@@ -135,6 +137,8 @@ const App = props => {
                 <Route path="/quizzes/physical/quiz/breath" component={Breath} />
                 <Route path="/quizzes/physical/quiz/movement" component={Movement} />
                 <Route path="/quizzes/physical/quiz/sleep" component={Sleep} />
+                <Route path="/quizzes/social/quiz/firstlevelupgrate" component={FirstLevelUpgrade} />
+                <Route path="/quizzes/social/quiz/secondlevelupgrate" component={SecondLevelUpgrade} />
                 <Route path="/evolution" exact component={Evolution} />
                 <Route path="/evolution/breathing" exact component={Breathing} />
                 <Route path="/evolution/relaxation" component={Norbu} />
