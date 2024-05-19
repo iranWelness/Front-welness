@@ -8,6 +8,7 @@ import { showNav } from '../../actions';
 import FontSize from "../../components/FontSize";
 import QuizEval from '../../components/QuizEval';
 
+
 const useStyle = makeStyles({
     wiw: {
         textAlign: 'center',
@@ -64,7 +65,7 @@ const Dimension = () => {
         <>
             <Box>
                 <Box style={{ backgroundColor: "#c4dffaad", height: 130, paddingTop: 30 }}>
-                    <Header component="link" to="/quizzes" />
+                    {/* <Header component="link" to="/quizzes" /> */}
                     <h2 onClick={handleOpen} className={classes.wiw}>ولنس چیست؟</h2>
                 </Box>
                 <Tabs style={{ backgroundColor: "#c4dffaad", color: "#7887a2" }} TabIndicatorProps={{
