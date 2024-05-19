@@ -71,6 +71,12 @@ import Movement from "./pages/quizzes/quizes/Movement";
 import Sleep from "./pages/quizzes/quizes/Sleep";
 import FirstLevelUpgrade from "./pages/quizzes/social/FirstLevelUpgrade";
 import SecondLevelUpgrade from "./pages/quizzes/social/SecondLevelUpgrade";
+import FirstLevelUpgradeE from "./pages/quizzes/emotional/FirstLevelUpgradeE";
+import SecondLevelUpgradeE from "./pages/quizzes/emotional/SecondLevelUpgradeE";
+import ThirdLevelUpgrade from "./pages/quizzes/emotional/ThirdLevelUpgrade";
+import FourthLevelUpgrade from "./pages/quizzes/emotional/FourthLevelUpgrade";
+import FiFthLevelUpgrade from "./pages/quizzes/emotional/FiFthLevelUpgrade";
+import SixthLevelUpgrade from "./pages/quizzes/emotional/SixthLevelUpgrade";
 
 
 
@@ -139,6 +145,12 @@ const App = props => {
                 <Route path="/quizzes/physical/quiz/sleep" component={Sleep} />
                 <Route path="/quizzes/social/quiz/firstlevelupgrate" component={FirstLevelUpgrade} />
                 <Route path="/quizzes/social/quiz/secondlevelupgrate" component={SecondLevelUpgrade} />
+                <Route path="/quizzes/emotional/quiz/firstlevelupgrate" component={FirstLevelUpgradeE}/>
+                <Route path="/quizzes/emotional/quiz/secondlevelupgrate" component={SecondLevelUpgradeE}/>
+                <Route path="/quizzes/emotional/quiz/thirdlevelupgrate" component={ThirdLevelUpgrade}/>
+                <Route path="/quizzes/emotional/quiz/fourthlevelupgrate" component={FourthLevelUpgrade}/>
+                <Route path="/quizzes/emotional/quiz/fifthlevelupgrate" component={FiFthLevelUpgrade}/>
+                <Route path="/quizzes/emotional/quiz/sixthlevelupgrate" component={SixthLevelUpgrade}/>
                 <Route path="/evolution" exact component={Evolution} />
                 <Route path="/evolution/breathing" exact component={Breathing} />
                 <Route path="/evolution/relaxation" component={Norbu} />

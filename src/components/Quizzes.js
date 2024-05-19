@@ -59,6 +59,18 @@ const useStyle = makeStyles({
         backgroundColor: "#CBDAF1",
         color: "#7888A2",
     },
+    FreeTestButton: {
+        height: 65,
+        width: 550,
+        marginTop: 30,
+        boxShadow: "-7px 6px 13px #a6a6a6b8, 7px -8px 20px 0px #ffffffd1",
+        fontWeight: "bold",
+        fontSize:20,
+        borderRadius: 20,
+        backgroundColor: "#CBDAF1",
+        color: "#7888A2",
+        marginTop:"4rem"
+    },
 });
 
 
@@ -132,13 +144,29 @@ const Quizzes = () => {
         </>
     )
 
+    let EmotionalQuiz = (
+        <>
+            <Divider variant='middle' className={classes.divider} />
+            <p style={{ color: "#AFBCCD", marginTop: 30 }}>SPA-S-1</p>
+            <Button variant="contained" className={classes.FreeTestButton} component={Link} to="/quizzes/emotional/quiz/firstlevelupgrate">تست رایگان</Button>
+            <Box display="flex" flexWrap="wrap" justifyContent="space-around" width="41%" marginTop="1rem">
+                <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/emotional/quiz/firstlevelupgrate">سطح یک ارتقا</Button>
+                <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/emotional/quiz/secondlevelupgrate">سطح دو ارتقا</Button>
+                <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/emotional/quiz/thirdlevelupgrate">سطح سه ارتقا</Button>
+                <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/emotional/quiz/fourthlevelupgrate">سطح چهار ارتقا</Button>
+                <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/emotional/quiz/fifthlevelupgrate">سطح پنچ ارتقا</Button>
+                <Button variant="contained" className={classes.suggestButton} component={Link} to="/quizzes/emotional/quiz/sixthlevelupgrate">سطح شش ارتقا</Button>
+            </Box>
+        </>
+    )
+
     return (
         <Box className={classes.wraperWraper}>
             <Box className={classes.quizzesWrapper}>
                 {quizzes}
             </Box>
 
-            {(dimension === "physical") ? suggestiveQuiz : (dimension === "social") ? SocialtiveQuiz : null}
+            {(dimension === "physical") ? suggestiveQuiz : (dimension === "social") ? SocialtiveQuiz : (dimension === "feeling") ? EmotionalQuiz : null}
         </Box>
     )
 }
